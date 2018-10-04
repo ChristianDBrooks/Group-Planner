@@ -127,21 +127,21 @@ function apiCall(one, two) {
     }
 
 }
-// email stuff below
-var templateParams
-function emailSend() {
-    console.log(emails)
-    var intName = localStorage.getItem("groupKey")
-    var emailAdds = emails.join(", ");
-    templateParams = {
-        from_name: screenName,
-        key: intName,
-        toEmail: emailAdds,
-    };
-    console.log(templateParams)//error watch for email
-    emailjs.send('groupplanneremail_gmail_com', 'sendkey', templateParams).then(function (response) {
-        console.log('SUCCESS!', response.status, response.text);
-    }, function (error) {
-        console.log('FAILED...', error);
-   });
-}
+// // email stuff below
+// var templateParams
+// function emailSend() {
+//     console.log(emails)
+//     var intName = localStorage.getItem("groupKey")
+//     var emailAdds = emails.join(", ");
+//     templateParams = {
+//         from_name: screenName,
+//         key: intName,
+//         toEmail: emailAdds,
+//     };
+//     console.log(templateParams)//error watch for email
+//     emailjs.send('groupplanneremail_gmail_com', 'sendkey', templateParams).then(function (response) {
+//         console.log('SUCCESS!', response.status, response.text);
+//     }, function (error) {
+//         console.log('FAILED...', error);
+//    });
+// }
